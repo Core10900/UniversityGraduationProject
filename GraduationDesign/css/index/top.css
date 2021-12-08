@@ -1,0 +1,26 @@
+#top {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    background-image: url(../../images/index/logo.png);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    position: relative;
+}
+
+#top #title {
+    height: 38px;
+    width: 100%;
+    font-size: 38px;
+    line-height: 38px;
+    color: red;
+    text-align: right;
+    position: absolute;
+    top: 31px;
+    font-weight: bold;
+    right: 20px;
+}
+
+#top #title:hover {
+    cursor: default;
+}

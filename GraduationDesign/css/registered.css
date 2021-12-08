@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: url(../images/login/登录注册背景图.png);
+}
+
+#login {
+    width: 1070px;
+    height: 640px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    top: 38px;
+    left: 65px;
+}
+
+#init {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+#jpg {
+    width: 515px;
+    height: 100%;
+    float: left;
+    background-color: bisque;
+    border-radius: 15px 0 0 15px;
+}
+
+#window {
+    width: 555px;
+    height: 100%;
+    float: right;
+    background-color: #fff;
+    border-radius: 0 15px 15px 0;
+    font-size: 16px;
+}
+
+#jpg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+#window p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#pwd1 {
+    width: 380px;
+    height: 55px;
+    line-height: 55px;
+    border: 5px soild #dcdfe6;
+    margin-left: 57px;
+    margin-top: 40px;
+    outline: medium;
+    font-size: 40px;
+    background-image: url(../images/login/pwd.png);
+    background-position: 15px;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    border-radius: 10px;
+}
+
+#pwd2 {
+    padding-left: 60px;
+    width: 380px;
+    height: 55px;
+    border: 5px soild #dcdfe6;
+    margin-left: 57px;
+    margin-top: 30px;
+    outline: medium;
+    font-size: 40px;
+    background-image: url(../images/login/pwd.png);
+    background-position: 15px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#name {
+    padding-left: 60px;
+    width: 380px;
+    height: 55px;
+    border: 5px soild #dcdfe6;
+    margin-left: 57px;
+    margin-top: 30px;
+    outline: medium;
+    font-size: 40px;
+    background-image: url(../images/login/login_jpg.jpg);
+    background-position: 15px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#sub {
+    width: 440px;
+    height: 55px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #44b3ff;
+    font-size: 25px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 57px;
+}
+
+#sub:hover {
+    color: #44b3ff;
+    background-color: aqua;
+}
+
+#registered {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#registered:hover {
+    color: red;
+}

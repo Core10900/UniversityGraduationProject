@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术论坛-注册</title>
+    <link rel="stylesheet" href="../css/registered.css">
+    <script src="../js/registered.js"></script>
+</head>
+
+<body>
+    <div id="init">
+        <div id="login">
+            <div id="jpg">
+                <img src="../images/registered/registered.jpeg" alt="">
+            </div>
+            <div id="window">
+                <form action="../php/registered.php" method="post" onsubmit="return CheckPost();" name="myfrom">
+                    <p id="h">
+                        中国高校教师学术论坛官网-注册
+                    </p>
+                    <input type="password" name="pwd1" id="pwd1" placeholder="请设置密码" autofocus>
+                    <input type="password" name="pwd2" id="pwd2" placeholder="请确认密码">
+                    <input type="text" name="name" id="name" placeholder="请输入您的真实姓名">
+
+                    <input type="submit" value="注册申请账号" name="sub" id="sub">
+
+                </form>
+                <a href="login.html" target="_self" id="registered">已有账号？点击此处前往登录</a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

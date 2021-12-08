@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术论坛-登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <div id="init">
+        <div id="login">
+            <div id="jpg">
+                <img src="../images/login/login.jpg" alt="">
+            </div>
+            <div id="window">
+                <form action="../php/login.php" method="post" onsubmit="return CheckPost();" name="myfrom">
+                    <p id="h">
+                        中国高校教师学术论坛官网-登录
+                    </p>
+                    <input type="text" name="username" id="username" placeholder="请输入账号" autofocus>
+                    <input type="password" name="pwd" id="pwd" placeholder="请输入密码">
+                    <input type="submit" value="登录" name="sub" id="sub">
+                </form>
+                <a href="registered.html" target="_self" id="registered">没有账号？点击此处前往注册</a>
+                <a href="backgroundlogin.html" target="_self" id="registered">点击此处进入后台登录</a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
