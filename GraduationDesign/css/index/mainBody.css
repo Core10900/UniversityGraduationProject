@@ -25,3 +25,110 @@
     color: #c4c4c4;
     text-align: center;
 }
+
+#mainBody #news {
+    width: 230px;
+    height: 1556px;
+    padding: 20px;
+    position: absolute;
+    right: 130px;
+    top: 0;
+    background-color: #fff;
+    border: 2px solid aqua;
+}
+
+#mainBody #news #title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#mainBody #news .newVideo {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    margin-top: 15px;
+}
+
+#mainBody #news .newVideo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+#mainBody #news .newVideo ul {
+    width: 100%;
+    height: auto;
+    background-color: rgba(65, 186, 190, 0.5);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
+#mainBody #news .newVideo ul li {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#mainBody #news .newVideo ul li a {
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: black;
+}
+
+#mainBody #news .newVideo ul li a:hover {
+    color: red;
+}
+
+#mainBody #news .newVideo img:hover {
+    box-shadow: 5px 5px 5px aquamarine;
+}
+
+#mainBody #news #newList {
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+}
+
+#mainBody #news #newList ul {
+    width: 100%;
+    height: auto;
+}
+
+#mainBody #news #newList ul li {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+
+#mainBody #news #newList ul li a {
+    font-size: 18px;
+    color: black;
+}
+
+#mainBody #news #newList ul li a:hover {
+    color: cornflowerblue;
+}
+
+#mainBody #news #tengxunlogo {
+    margin-top: 25px;
+    border-top: 2px solid black;
+}
+
+#mainBody #news #tengxunlogo a img {
+    width: 100%;
+}
+
+#mainBody #news #tengxunlogo a {
+    text-decoration: none;
+    color: black;
+}
+
+#mainBody #news #tengxunlogo a:hover {
+    color: cornflowerblue;
+}
