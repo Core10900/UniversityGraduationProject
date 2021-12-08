@@ -45,3 +45,20 @@ function changePic(curIndex) {
     pic[curIndex].style.display = "block";
     list[curIndex].className = "on";
 }
+
+//二维码吸顶灯效果
+var erweimaEle = document.querySelector("#erweima");
+
+window.onscroll = function() {
+    var num = document.documentElement.scrollTop;
+    console.log(num);
+    if (num >= 695) {
+        erweimaEle.style.position = "fixed";
+        erweimaEle.style.top = "0px";
+        erweimaEle.style.right = "10%";
+    } else {
+        erweimaEle.style.position = "absolute";
+        erweimaEle.style.top = "0px";
+        erweimaEle.style.right = "0px";
+    }
+}

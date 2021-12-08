@@ -1,0 +1,27 @@
+#mainBody {
+    margin-top: 20px;
+    width: 1200px;
+    height: 1600px;
+    background-color: #d6dae2;
+    position: relative;
+}
+
+#mainBody #erweima {
+    padding: 8px;
+    width: 120px;
+    height: 166px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#mainBody #erweima img {
+    width: 100%;
+}
+
+#mainBody #erweima p {
+    font-size: 14px;
+    color: #c4c4c4;
+    text-align: center;
+}
