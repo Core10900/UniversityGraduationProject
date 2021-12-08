@@ -1,134 +1,242 @@
-#mainBody {
-    margin-top: 20px;
-    width: 1200px;
-    height: 1600px;
-    background-color: #d6dae2;
-    position: relative;
-}
-
-#mainBody #erweima {
-    padding: 8px;
-    width: 120px;
-    height: 166px;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#mainBody #erweima img {
-    width: 100%;
-}
-
-#mainBody #erweima p {
-    font-size: 14px;
-    color: #c4c4c4;
-    text-align: center;
-}
-
-#mainBody #news {
-    width: 230px;
-    height: 1556px;
-    padding: 20px;
-    position: absolute;
-    right: 130px;
-    top: 0;
-    background-color: #fff;
-    border: 2px solid aqua;
-}
-
-#mainBody #news #title {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-#mainBody #news .newVideo {
-    width: 100%;
-    height: 160px;
-    position: relative;
-    margin-top: 15px;
-}
-
-#mainBody #news .newVideo img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-}
-
-#mainBody #news .newVideo ul {
-    width: 100%;
-    height: auto;
-    background-color: rgba(65, 186, 190, 0.5);
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-}
-
-#mainBody #news .newVideo ul li {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-#mainBody #news .newVideo ul li a {
-    text-overflow: ellipsis;
-    text-decoration: none;
-    color: black;
-}
-
-#mainBody #news .newVideo ul li a:hover {
-    color: red;
-}
-
-#mainBody #news .newVideo img:hover {
-    box-shadow: 5px 5px 5px aquamarine;
-}
-
-#mainBody #news #newList {
-    margin-top: 25px;
-    width: 100%;
-    height: auto;
-}
-
-#mainBody #news #newList ul {
-    width: 100%;
-    height: auto;
-}
-
-#mainBody #news #newList ul li {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin-top: 10px;
-}
-
-#mainBody #news #newList ul li a {
-    font-size: 18px;
-    color: black;
-}
-
-#mainBody #news #newList ul li a:hover {
-    color: cornflowerblue;
-}
-
-#mainBody #news #tengxunlogo {
-    margin-top: 25px;
-    border-top: 2px solid black;
-}
-
-#mainBody #news #tengxunlogo a img {
-    width: 100%;
-}
-
-#mainBody #news #tengxunlogo a {
-    text-decoration: none;
-    color: black;
-}
-
-#mainBody #news #tengxunlogo a:hover {
-    color: cornflowerblue;
-}
+    #mainBody {
+        margin-top: 20px;
+        width: 1200px;
+        height: 1600px;
+        background-color: #d6dae2;
+        position: relative;
+    }
+    
+    #mainBody #erweima {
+        padding: 8px;
+        width: 120px;
+        height: 166px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    #mainBody #erweima img {
+        width: 100%;
+    }
+    
+    #mainBody #erweima p {
+        font-size: 14px;
+        color: #c4c4c4;
+        text-align: center;
+    }
+    
+    #mainBody #news {
+        width: 230px;
+        height: 1556px;
+        padding: 20px;
+        position: absolute;
+        right: 130px;
+        top: 0;
+        background-color: #fcfafb;
+        border: 2px solid aqua;
+    }
+    
+    #mainBody #news #title {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    #mainBody #news .newVideo {
+        width: 100%;
+        height: 160px;
+        position: relative;
+        margin-top: 15px;
+    }
+    
+    #mainBody #news .newVideo img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+    
+    #mainBody #news .newVideo ul {
+        width: 100%;
+        height: auto;
+        background-color: rgba(65, 186, 190, 0.5);
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+    }
+    
+    #mainBody #news .newVideo ul li {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    #mainBody #news .newVideo ul li a {
+        text-overflow: ellipsis;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #mainBody #news .newVideo ul li a:hover {
+        color: red;
+    }
+    
+    #mainBody #news .newVideo img:hover {
+        box-shadow: 5px 5px 5px aquamarine;
+    }
+    
+    #mainBody #news #newList {
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+    }
+    
+    #mainBody #news #newList ul {
+        width: 100%;
+        height: auto;
+    }
+    
+    #mainBody #news #newList ul li {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-top: 10px;
+    }
+    
+    #mainBody #news #newList ul li a {
+        font-size: 18px;
+        color: black;
+    }
+    
+    #mainBody #news #newList ul li a:hover {
+        color: cornflowerblue;
+    }
+    
+    #mainBody #news #tengxunlogo {
+        margin-top: 25px;
+        border-top: 2px solid black;
+    }
+    
+    #mainBody #news #tengxunlogo a img {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    #mainBody #news #tengxunlogo a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #mainBody #news #tengxunlogo a:hover {
+        color: cornflowerblue;
+    }
+    
+    #mainBody #news #phone {
+        margin-top: 40px;
+        border-top: 2px solid black;
+    }
+    
+    #mainBody #news #phone #title {
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    #mainBody #news #phone .about {
+        margin-top: 20px;
+    }
+    
+    #mainBody #news #phone .about a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #mainBody #news #phone .about a:hover {
+        color: cornflowerblue;
+    }
+    
+    #mainBody #computer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 736px;
+        height: 311px;
+        background-color: #fcfafb;
+        border: 2px solid aqua;
+        padding: 20px;
+    }
+    
+    #mainBody #computer #title {
+        width: 100%;
+        height: auto;
+    }
+    
+    #mainBody #computer #title span {
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    #mainBody #computer #title a {
+        float: right;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #mainBody #computer #title a:hover {
+        color: aqua;
+    }
+    
+    #mainBody #computer .plate {
+        clear: left;
+        width: 225px;
+        height: 275px;
+        background-color: #fff;
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    
+    #mainBody #computer .plate img {
+        width: 100%;
+        height: 56%;
+        border-bottom: 4px solid #1fc0ef;
+    }
+    
+    #mainBody #computer .plate .txt-title {
+        font-size: 16px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-top: 5px;
+    }
+    
+    #mainBody #computer .plate .txt {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 14px;
+        color: #cdcdcd;
+        line-height: 18px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        text-indent: 2em
+    }
+    
+    #mainBody #computer .plate a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #mainBody #computer .plate a img:hover {
+        box-shadow: 1px 1px 1px 1px aqua;
+    }
+    
+    #mainBody #computer .plate a .txt-title:hover {
+        color: cornflowerblue;
+    }
