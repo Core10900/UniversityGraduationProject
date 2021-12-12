@@ -4,7 +4,7 @@
     $pwd=$_POST['pwd'];
    
     $dbhost="localhost";
-    $dbpwd="95162400";
+    $dbpwd="root";
     $dbuser="root";
     $conn=mysqli_connect($dbhost,$dbuser,$dbpwd);
     if(!$conn){
