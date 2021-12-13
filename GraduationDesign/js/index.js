@@ -51,7 +51,7 @@ var erweimaEle = document.querySelector("#erweima");
 
 window.onscroll = function() {
     var num = document.documentElement.scrollTop;
-    console.log(num);
+    // console.log(num);
     if (num >= 695) {
         erweimaEle.style.position = "fixed";
         erweimaEle.style.top = "0px";

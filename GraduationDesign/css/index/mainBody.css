@@ -1,8 +1,8 @@
     #mainBody {
         margin-top: 20px;
         width: 1200px;
-        height: 1600px;
-        background-color: #d6dae2;
+        height: 1480px;
+        /* background-color: #d6dae2; */
         position: relative;
     }
     
@@ -10,7 +10,7 @@
         padding: 8px;
         width: 120px;
         height: 166px;
-        background-color: #fff;
+        /* background-color: #fff; */
         position: absolute;
         top: 0;
         right: 0;
@@ -22,13 +22,14 @@
     
     #mainBody #erweima p {
         font-size: 14px;
-        color: #c4c4c4;
+        color: cornflowerblue;
         text-align: center;
+        cursor: default;
     }
     
     #mainBody #news {
         width: 230px;
-        height: 1556px;
+        height: 1436px;
         padding: 20px;
         position: absolute;
         right: 130px;
@@ -125,6 +126,7 @@
         margin-top: 10px;
         width: 100%;
     }
+
     
     #mainBody #news #tengxunlogo a {
         text-decoration: none;
@@ -249,7 +251,7 @@
     
     #mainBody #dry {
         width: 736px;
-        height: 456px;
+        height: 596px;
         border: 2px solid aqua;
         background-color: #fcfafb;
         padding: 20px;
@@ -280,4 +282,159 @@
     #mainBody #dry #title a:hover {
         color: red;
         font-weight: bold;
+    }
+    #mainBody #dry .plate{
+        width: 695px;
+        height: 125px;
+        background-color: #fff;
+        padding: 20px;
+    }
+    #mainBody #dry .plate .img{
+        width: 125px;
+        height: 125px;
+        float: left;
+        background-color: aqua;
+    }
+    #mainBody #dry .plate .img .png{
+        width: 100%;
+        height: 100%;
+    }
+    #mainBody #dry .plate .img .png:hover{
+        box-shadow: 3px 3px 3px aqua;
+    }
+    #mainBody #dry .plate .txt{
+        width: 78%;
+        height: 100%;
+        float: right;
+        /* background-color: aqua; */
+    }
+    #mainBody #dry .plate .txt .title{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+    #mainBody #dry .plate .txt .author{
+        font-size: 14px;
+        line-height: 20px;
+        font-variant: initial;
+    }
+    #mainBody #dry .plate .txt .text{
+        width: 100%;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #cdcdcd;
+        line-height: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-indent: 2em
+
+    }
+    #mainBody #dry .plate a{
+        text-decoration: none;
+        color: black;
+    }
+    #mainBody #dry .plate .txt .title:hover{
+        color: cornflowerblue;
+    }
+    #mainBody #dry .plate .txt .author:hover{
+        color: cornflowerblue;
+    }
+    #mainBody #dry .plate .txt .text:hover{
+        color: cornflowerblue;
+    }
+    #mainBody #activity{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 736px;
+        padding: 20px;
+        height: 400px;
+        border: 2px solid aqua;
+        background-color: #fcfafb;
+    }
+    #mainBody #activity #title {
+        width: 100%;
+        height: auto;
+    }
+    
+    #mainBody #activity #title span {
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: default;
+    }
+    
+    #mainBody #activity #title a {
+        float: right;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    
+    #mainBody #activity #title a:hover {
+        color: red;
+        font-weight: bold;
+    }
+    #mainBody #activity .plate{
+        width: 695px;
+        height: 125px;
+        background-color: #fff;
+        padding: 20px;
+    }
+    #mainBody #activity .plate .img{
+        width: 125px;
+        height: 125px;
+        float: left;
+        background-color: aqua;
+    }
+    #mainBody #activity .plate .img .png{
+        width: 100%;
+        height: 100%;
+    }
+    #mainBody #activity .plate .img .png:hover{
+        box-shadow: 3px 3px 3px aqua;
+    }
+    #mainBody #activity .plate .txt{
+        width: 78%;
+        height: 100%;
+        float: right;
+        /* background-color: aqua; */
+    }
+    #mainBody #activity .plate .txt .title{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+    #mainBody #activity .plate .txt .author{
+        font-size: 14px;
+        line-height: 20px;
+        font-variant: initial;
+    }
+    #mainBody #activity .plate .txt .text{
+        width: 100%;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #cdcdcd;
+        line-height: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-indent: 2em
+
+    }
+    #mainBody #activity .plate a{
+        text-decoration: none;
+        color: black;
+    }
+    #mainBody #activity .plate .txt .title:hover{
+        color: cornflowerblue;
+    }
+    #mainBody #activity .plate .txt .author:hover{
+        color: cornflowerblue;
+    }
+    #mainBody #activity .plate .txt .text:hover{
+        color: cornflowerblue;
     }
