@@ -6,7 +6,7 @@ window.onload = function() {
     switch (hashStr) {
         case '#1':
             login.innerHTML = "欢迎登录中国教师学术论坛网!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id='regis'>[注销]</button>";
-
+            
 
             break;
             // case '#page2':
