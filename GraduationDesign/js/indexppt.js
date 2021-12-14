@@ -1,8 +1,9 @@
 window.onload = function() {
-
+    
     var login = document.getElementById("logins");
     // 获取 页面的哈希值；
     var hashStr = window.location.hash;
+    console.log(hashStr);
     switch (hashStr) {
         case '#1':
             login.innerHTML = "欢迎登录中国教师学术论坛网!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id='regis'>[注销]</button>";
@@ -15,6 +16,12 @@ window.onload = function() {
         default:
             login.innerHTML = '<a href="../html/login.html">[登录]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="registered.html">[注册]</a>';
             break;
+    }
+    if(hashStr=="#1"){
+        setTimeout(function(){
+            alert("欢迎登录中国教师学术论坛网！");
+        },500);
+        
     }
     var regbtn = document.getElementById("regis");
     regbtn.onclick = function() {

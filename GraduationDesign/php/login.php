@@ -38,7 +38,7 @@
             $flag=true;
         }
         if($flag){
-            echo '<script>window.location.href="../html/index.html#1";alert("欢迎登录中国教师学术论坛网！");</script>';
+            echo '<script>window.location.href="../html/index.html#1";</script>';
             //网页跳转到首页并发送哈希值
         }
     }
