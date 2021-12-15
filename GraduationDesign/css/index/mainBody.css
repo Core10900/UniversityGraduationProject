@@ -35,7 +35,7 @@
         right: 130px;
         top: 0;
         background-color: #fcfafb;
-        border: 2px solid aqua;
+        border: 2px solid #bababa;
     }
     
     #mainBody #news #title {
@@ -170,7 +170,7 @@
         width: 736px;
         height: 311px;
         background-color: #fcfafb;
-        border: 2px solid aqua;
+        border: 2px solid #bababa;
         padding: 20px;
     }
     
@@ -252,7 +252,7 @@
     #mainBody #dry {
         width: 736px;
         height: 596px;
-        border: 2px solid aqua;
+        border: 2px solid #bababa;
         background-color: #fcfafb;
         padding: 20px;
         position: absolute;
@@ -351,7 +351,7 @@
         width: 736px;
         padding: 20px;
         height: 400px;
-        border: 2px solid aqua;
+        border: 2px solid #bababa;
         background-color: #fcfafb;
     }
     #mainBody #activity #title {
