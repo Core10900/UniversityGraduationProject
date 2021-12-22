@@ -6,9 +6,9 @@
     $dbhost="localhost";
     $dbpwd="root";
     $dbuser="root";
-    $conn=mysqli_connect($dbhost,$dbuser,$dbpwd);
+    $conn=mysqli_connect($dbhost,$dbuser,$dbpwd,"bbs");
     if(!$conn){
-        die('数据库链接失败：'.mysqli_error($conn));
+        die('数据库链接失败!');
     }
     
     $flag=true;
@@ -22,7 +22,6 @@
             die;
         }
         $sql="SELECT id,account,pwd FROM user WHERE account='$user' AND pwd='$pwd'";
-        mysqli_select_db( $conn, 'bbs' );
         $retval = mysqli_query( $conn, $sql );
         
         $res=mysqli_fetch_row($retval);
