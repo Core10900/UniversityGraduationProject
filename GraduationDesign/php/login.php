@@ -38,6 +38,11 @@
             $flag=true;
         }
         if($flag){
+            $sql="SELECT id FROM user WHERE account='$user' AND pwd='$pwd'";
+            $res=mysqli_query($conn,$sql);
+            $resarr=mysqli_fetch_assoc($res);
+            $id=$resarr['id'];
+            setcookie("id",$id,time()+86400);
             echo '<script>window.location.href="../html/index.html#1";</script>';
             //网页跳转到首页并发送哈希值
         }
