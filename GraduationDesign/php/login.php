@@ -21,7 +21,7 @@
             echo '<script>alert("密码必须是8-14位纯数字或纯字母或数字+字母的组合！");window.location.href="../html/login.html";</script>';
             die;
         }
-        $sql="SELECT account,pwd FROM user WHERE account='$user' AND pwd='$pwd'";
+        $sql="SELECT id,account,pwd FROM user WHERE account='$user' AND pwd='$pwd'";
         mysqli_select_db( $conn, 'bbs' );
         $retval = mysqli_query( $conn, $sql );
         
@@ -38,11 +38,6 @@
             $flag=true;
         }
         if($flag){
-            $sql="SELECT id FROM user WHERE account='$user' AND pwd='$pwd'";
-            $res=mysqli_query($conn,$sql);
-            $resarr=mysqli_fetch_assoc($res);
-            $id=$resarr['id'];
-            setcookie("id",$id,time()+86400);
             echo '<script>window.location.href="../html/index.html#1";</script>';
             //网页跳转到首页并发送哈希值
         }
