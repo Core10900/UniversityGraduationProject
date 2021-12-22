@@ -3,7 +3,7 @@ window.onload = function() {
     var login = document.getElementById("logins");
     // 获取 页面的哈希值；
     var hashStr = window.location.hash;
-    console.log(hashStr);
+    // console.log(hashStr);
     switch (hashStr) {
         case '#1':
             login.innerHTML = "欢迎登录中国教师学术论坛网!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id='regis'>[注销]</button>";
@@ -21,12 +21,21 @@ window.onload = function() {
         setTimeout(function(){
             alert("欢迎登录中国教师学术论坛网！");
         },500);
-        
+        let search=decodeURI(window.location.search);
+        // console.log(search);
+        let uid=search.substring(5);
+        let res=uid.replace('"',"");
+        // console.log(res);
+        let id=Number(res);
+        // console.log(id);
+        document.cookie=`id=${id};Max-Age=`+86400;
+        //设置用户id存入cookie
     }
     var regbtn = document.getElementById("regis");
     regbtn.onclick = function() {
         var res = confirm("您确定退出登录吗？");
         if (res) {
+            document.cookie=`id=;Max-Age=-1`;
             window.location.href = 'index.html';
             alert("注销成功！");
         }

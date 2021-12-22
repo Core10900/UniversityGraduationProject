@@ -10,7 +10,6 @@
     if(!$conn){
         die('数据库链接失败!');
     }
-    
     $flag=true;
     if(!empty($_POST))
     {
@@ -35,9 +34,14 @@
             die;
         }else{
             $flag=true;
+            $conn=mysqli_connect("localhost","root","root","bbs");
+            $sql="SELECT id,account,pwd FROM user WHERE account='$user' AND pwd='$pwd'";
+            $retval = mysqli_query( $conn, $sql );
+            $arr=mysqli_fetch_assoc($retval);
+            $id=json_encode($arr['id']);
         }
         if($flag){
-            echo '<script>window.location.href="../html/index.html#1";</script>';
+            echo "<script>window.location.href=`../html/index.html?id=$id#1`;</script>";
             //网页跳转到首页并发送哈希值
         }
     }
