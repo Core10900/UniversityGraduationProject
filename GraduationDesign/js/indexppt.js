@@ -27,14 +27,16 @@ window.onload = function() {
         let res=uid.replace('"',"");
         // console.log(res);
         let id=Number(res);
-        // console.log(id);
-        document.cookie=`id=${id};Max-Age=`+86400;
-        //设置用户id存入cookie
+        console.log(id);
+        document.cookie=`id=${id};`;
+        sessionStorage.setItem("id",id);
+
     }
     var regbtn = document.getElementById("regis");
     regbtn.onclick = function() {
         var res = confirm("您确定退出登录吗？");
         if (res) {
+            sessionStorage.clear();
             document.cookie=`id=;Max-Age=-1`;
             window.location.href = 'index.html';
             alert("注销成功！");
