@@ -23,13 +23,23 @@ window.onload = function() {
         },500);
         let search=decodeURI(window.location.search);
         // console.log(search);
-        let uid=search.substring(5);
+        let uid=search.substring(1);
         let res=uid.replace('"',"");
+        res=res.replace('"',"");
+        res=res.replace('"',"");
+        res=res.replace('"',"");
         // console.log(res);
-        let id=Number(res);
-        console.log(id);
+        let userdata=res.split("&");
+        // console.log(userdata);
+        uid=userdata[0].substring(3);
+        let ustatus=userdata[1].substring(8);
+        let id=Number(uid);
+        // console.log(id,ustatus);
+        // console.log(id);
         document.cookie=`id=${id};`;
+        document.cookie=`ustatus=${ustatus}`
         sessionStorage.setItem("id",id);
+        sessionStorage.setItem("ustatus",ustatus);
 
     }
     var regbtn = document.getElementById("regis");
@@ -38,6 +48,7 @@ window.onload = function() {
         if (res) {
             sessionStorage.clear();
             document.cookie=`id=;Max-Age=-1`;
+            document.cookie=`ustatus=;Max-Age=-1`;
             window.location.href = 'index.html';
             alert("注销成功！");
         }

@@ -35,13 +35,14 @@
         }else{
             $flag=true;
             $conn=mysqli_connect("localhost","root","root","bbs");
-            $sql="SELECT id,account,pwd FROM user WHERE account='$user' AND pwd='$pwd'";
+            $sql="SELECT id,account,pwd,ustatus FROM user WHERE account='$user' AND pwd='$pwd'";
             $retval = mysqli_query( $conn, $sql );
             $arr=mysqli_fetch_assoc($retval);
             $id=json_encode($arr['id']);
+            $ustatus=json_encode($arr['ustatus']);
         }
         if($flag){
-            echo "<script>window.location.href=`../html/index.html?id=$id#1`;</script>";
+            echo "<script>window.location.href=`../html/index.html?id=$id&ustatus=$ustatus#1`;</script>";
             //网页跳转到首页并发送哈希值
         }
     }

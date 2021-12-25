@@ -1,0 +1,57 @@
+#show #newstext{
+    width: 1220px;
+    height: 450px;
+    margin-left: 7px;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 9;
+}
+#show #newstext textarea{
+    height: 100%;
+    width: 100%;
+}
+#show #releasebtn{
+    height: 44px;
+    width: 210px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+    font-size: 22px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 595px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+#show #releasebtn:hover{
+    background-color: #2890ff;
+    color: #fff;
+    border: none;
+}
+#show #relenewtitle{
+    width: 1220px;
+    height: 70px;
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    font-size: 45px;
+    
+    overflow: hidden;    
+    text-overflow:ellipsis;    
+    white-space:nowrap;
+}
+#show #inforbtn{
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    height: 50px;
+    margin-top: 600px;
+}
+#show #inforbtn #numberOfnews{
+    position:absolute;
+    bottom: 30px;
+    right:10px ;
+    
+}

@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>后台管理</title>
+    <link rel="stylesheet" href="../css/root/init.css">
+    <link rel="stylesheet" href="../css/root/releaseNew.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="./richText/tinymce.min.js"></script>
+    <script src="./richText/langs/zh_CN.js"></script>
+
 </head>
+
 <body>
-    
+    <div id="init">
+        <div id="top">
+            <div>中国高校教师学术论坛网后台</div>
+        </div>
+        <div id="nav">
+            <button class="navbtn" id="releaseNew">发布新闻</button>
+            <button class="navbtn" id="news">新闻管理</button>
+
+            <button class="navbtn" id="user">用户管理</button>
+            <button class="navbtn" id="searchUser">用户查询</button>
+            <button class="navbtn" id="paper">论文管理</button>
+            <button class="navbtn" id="auditPaper">论文审核</button>
+            <button class="navbtn" id="security">安全中心</button>
+            <button class="navbtn" id="information">网站信息</button>
+        </div>
+        <div id="show" class="show">
+            <input type="text" name="" id="relenewtitle" placeholder="请输入新闻标题">
+            <div id="newstext">
+                <textarea></textarea>
+            </div>
+            <div id="inforbtn">
+                <button id="releasebtn">发布新闻</button> <input type="text" name="" id="numberOfnews">
+            </div>
+        </div>
+        <div id="show1" class="show">
+            <input type="text" name="" id="relenewtitle" placeholder="请输入新闻标题">
+            <div id="newstext">
+                <textarea></textarea>
+            </div>
+            <div>
+                <button id="releasebtn">1</button>
+            </div>
+        </div>
+        <div id="show2" class="show">
+            <input type="text" name="" id="relenewtitle" placeholder="请输入新闻标题">
+            <div id="newstext">
+                <textarea></textarea>
+            </div>
+            <div>
+                <button id="releasebtn">2</button>
+            </div>
+        </div>
+        <div id="show3" class="show">
+            <input type="text" name="" id="relenewtitle" placeholder="请输入新闻标题">
+            <div id="newstext">
+                <textarea></textarea>
+            </div>
+            <div>
+                <button id="releasebtn">3</button>
+            </div>
+        </div>
+        <div id="show4" class="show">
+            <input type="text" name="" id="relenewtitle" placeholder="请输入新闻标题">
+            <div id="newstext">
+                <textarea></textarea>
+            </div>
+            <div>
+                <button id="releasebtn">4</button>
+            </div>
+        </div>
+        <div id="show5" class="show">
+            <input type="text" name="" id="relenewtitle" placeholder="请输入新闻标题">
+            <div id="newstext">
+                <textarea></textarea>
+            </div>
+            <div>
+                <button id="releasebtn">5</button>
+            </div>
+        </div>
+        <div id="show6" class="show">
+            <input type="text" name="" id="relenewtitle" placeholder="请输入新闻标题">
+            <div id="newstext">
+                <textarea></textarea>
+            </div>
+            <div>
+                <button id="releasebtn">6</button>
+            </div>
+        </div>
+        <div id="show7" class="show">
+            <div id="box1">
+                <div class="inittitle">网站名称:&nbsp;&nbsp;中国高校教师学术论坛网</div>
+                <div class="inittitle">制作团队:&nbsp;&nbsp;天狼星</div>
+                <div class="inittitle">联系邮箱:&nbsp;&nbsp;1600661295@qq.com</div>
+                <div class="inittitle">备案号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wuhan Huaxia Institute of Technology&nbsp;&copy;&nbsp;2021-12-10</div>
+            </div>
+            <img src="../images/root/init.png" alt="" id="initimg">
+        </div>
+    </div>
 </body>
+<script src="../js/root/root.js"></script>
+<script src="../js/root/information.js"></script>
+<script src="../js/root/auditPaper.js"></script>
+<script src="../js/root/news.js"></script>
+<script src="../js/root/paper.js"></script>
+<script src="../js/root/releaseNew.js"></script>
+<script src="../js/root/searchUser.js"></script>
+<script src="../js/root/security.js"></script>
+<script src="../js/root/user.js"></script>
+<script>tinymce.init({ selector: 'textarea', language: "zh_CN" });</script>
+
 </html>

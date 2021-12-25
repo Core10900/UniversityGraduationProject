@@ -8,7 +8,7 @@
     $dbuser="root";
     $conn=mysqli_connect($dbhost,$dbuser,$dbpwd);
     if(!$conn){
-        die('数据库链接失败：'.mysqli_error($conn));
+        die('数据库链接失败!');
     }
     
     $flag=true;
@@ -21,7 +21,7 @@
             echo '<script>alert("密码必须是8-14位纯数字或纯字母或数字+字母的组合！");window.location.href="../html/backgroundlogin.html";</script>';
             die;
         }
-        $sql="SELECT rootaccount,rootpwd FROM root WHERE rootaccount='$user' AND rootpwd='$pwd'";
+        $sql="SELECT id,rootaccount,rootpwd FROM root WHERE rootaccount='$user' AND rootpwd='$pwd'";
         mysqli_select_db( $conn, 'bbs' );
         $retval = mysqli_query( $conn, $sql );
         
@@ -36,9 +36,15 @@
             die;
         }else{
             $flag=true;
+            $conn=mysqli_connect("localhost","root","root","bbs");
+            $sql="SELECT id FROM `root` WHERE rootaccount='$user' AND rootpwd='$pwd'";
+            $res=mysqli_query($conn,$sql);
+
+            $arr=mysqli_fetch_assoc($res);
+            $id=json_encode($arr['id']);
         }
         if($flag){
-            echo '<script>window.location.href="../html/backgroundlogin.html#1";alert("后台登录成功！");</script>';
+            echo "<script>window.location.href=`../html/root.html?id=$id#1`;</script>";
             //网页跳转到首页并发送哈希值
         }
     }
