@@ -24,18 +24,35 @@ releasebtn.onclick=()=>{
     if(num<200){
         alert("新闻正文内容少于200字，请检查内容是否缺失");
     }else{
+        /*
         let xhr;
         if(window.XMLHttpRequest){
             xhr=new XMLHttpRequest();
         }else{
             xhr=new ActiveXObject();
         }
-        xhr.open("post","../../php/root/releaseNew.php",true);
-        xhr.send();
+        xhr.open("post","../php/root/releaseNew.php",true);
+        xhr.send(`title=${JSON.stringify(relenewtitle)}&text=${JSON.stringify(newtext)}`);
         xhr.onload=function(){
-            let data=JSON.parse(xhr.responseText);
+            let data=JSON.stringify(xhr.responseText);
             console.log(data);
-        }
+        }*/
+        let from=new FormData();
+        from.append("title",relenewtitle);
+        from.append("text",newtext);
+        $.ajax({
+            type: "post",
+            url: '../php/root/releaseNew.php',
+            contentType:false,
+            processData:false,
+            data: from,
+            success: function (data) {
+                let arr=JSON.parse(data);
+                if(arr[0]==2){
+                    alert("发布成功！");
+                }
+            }
+        })
     }
 
 }

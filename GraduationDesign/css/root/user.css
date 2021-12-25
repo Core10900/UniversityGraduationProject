@@ -1,0 +1,109 @@
+#show2 #usertitle{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 38px;
+    cursor: default;
+}
+#show2 #getuser{
+    width: 1035px;
+    height: 350px;
+    padding: 50px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+#show2 #getuser .userinfor{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 36px;
+    position: relative;
+}
+#show2 #getuser .userinfor .username{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: default;
+}
+#show2 #getuser .userinfor .userstatus{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    cursor: default;
+}
+#show2 #getuser .userinfor .useroperate{
+    width: 200px;
+    height: 50px;
+    font-size: 36px;
+    text-align: center;
+    position: absolute;
+    right: 200px;
+    top: 0;
+    cursor: default;
+    background-color: #fff;
+    border-radius: 8px;
+    border:none;
+}
+#show2 #getuser .userinfor .useroperate:hover{
+    background-color: aqua;
+    color: #fff;
+}
+#show2 #userbtns{
+    width: 1035px;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    margin-top: 50px;
+}
+
+#show2 #userbtns #userprevbtn{
+    position: absolute;
+    left: 150px;
+    top: 7px;
+    width: 150px;
+    height: 36px;
+    font-size: 32px;
+    text-align: center;
+    line-height:36px;
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+}
+#show2 #userbtns #userprevbtn:hover{
+    background-color: cyan;
+    color: #fff;
+}
+#show2 #userbtns #usernextbtn{
+    position: absolute;
+    right: 150px;
+    top: 7px;
+    width: 150px;
+    height: 36px;
+    font-size: 32px;
+    text-align: center;
+    line-height:36px;
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+}
+#show2 #userbtns #usernextbtn:hover{
+    background-color: cyan;
+    color: #fff;
+}
+#show2 #userbtns #userpages{
+    top: 10px;
+    text-align: center;
+    position: absolute;
+    left: 570px;
+    cursor: default;
+}
