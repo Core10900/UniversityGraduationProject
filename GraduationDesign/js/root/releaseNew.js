@@ -50,6 +50,7 @@ releasebtn.onclick=()=>{
                 let arr=JSON.parse(data);
                 if(arr[0]==2){
                     alert("发布成功！");
+                    window.location.reload();
                 }
             }
         })

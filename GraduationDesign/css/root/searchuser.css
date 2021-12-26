@@ -1,0 +1,181 @@
+#show3 #searchusername{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    margin-top: 10px;
+}
+#show3 #searchusername #inputname{
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid aqua;
+    outline: none;
+    top: 4px;
+    left: 290px;
+    font-size: 32px;
+    line-height: 40px;
+    border-radius: 8px;
+}
+#show3 #searchusername #searUserBtn{
+    width: 120px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    border-radius: 8px;
+    top: 4px;
+    right: 430px;
+    font-size: 28px;
+}
+#show3 #searchusername #searUserBtn:hover{
+    background-color: #2890ff;
+    border: none;
+    color: #fff;
+}
+
+#show3 #userinformation{
+    width: 1035px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* border: 1px solid aqua; */
+    font-size: 38px;
+    position: relative;
+    margin:0 auto;
+    /* top:-40px; */
+}
+#show3 #userinformation #usernames{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 50;
+    top: 0;
+    cursor: default;
+}
+#show3 #userinformation #userstatuss{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 350px;
+    top: 0;
+    cursor: default;
+}
+#show3 #userinformation #useroperates{
+    width: 200px;
+    height: 50px;
+    font-size: 36px;
+    text-align: center;
+    position: absolute;
+    right: 200px;
+    top: 0;
+    cursor: default;
+
+}
+#show3 #searchres{
+    width: 1035px;
+    height: 350px;
+    padding: 50px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-top: -40px;
+}
+
+#show3 #searchres .userinfor{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 36px;
+    position: relative;
+}
+#show3 #searchres .userinfor .username{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: default;
+}
+#show3 #searchres .userinfor .userstatus{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 300px;
+    top: 0;
+    cursor: default;
+}
+#show3 #searchres .userinfor .useroperate{
+    width: 200px;
+    height: 50px;
+    font-size: 36px;
+    text-align: center;
+    position: absolute;
+    right: 150px;
+    top: 0;
+    cursor: default;
+    background-color: #fff;
+    border-radius: 8px;
+    border:none;
+}
+#show3 #searchres .userinfor .useroperate:hover{
+    background-color: aqua;
+    color: #fff;
+}
+#show3 #searuserbtns{
+    width: 1035px;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    margin-top: 50px;
+}
+
+#show3 #searuserbtns #searuserprevbtn{
+    position: absolute;
+    left: 150px;
+    top: 7px;
+    width: 150px;
+    height: 36px;
+    font-size: 32px;
+    text-align: center;
+    line-height:36px;
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+}
+#show3 #searuserbtns #searuserprevbtn:hover{
+    background-color: cyan;
+    color: #fff;
+}
+#show3 #searuserbtns #searusernextbtn{
+    position: absolute;
+    right: 150px;
+    top: 7px;
+    width: 150px;
+    height: 36px;
+    font-size: 32px;
+    text-align: center;
+    line-height:36px;
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+}
+#show3 #searuserbtns #searusernextbtn:hover{
+    background-color: cyan;
+    color: #fff;
+}
+#show3 #searuserbtns #searuserpages{
+    top: 10px;
+    text-align: center;
+    position: absolute;
+    left: 570px;
+    cursor: default;
+}

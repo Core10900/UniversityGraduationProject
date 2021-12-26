@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/root/releaseNew.css">
     <link rel="stylesheet" href="../css/root/newlist.css">
     <link rel="stylesheet" href="../css/root/user.css">
+    <link rel="stylesheet" href="../css/root/searchuser.css">
+    <link rel="stylesheet" href="../css/root/rootpwd.css">
     <script src="../js/jquery.min.js"></script>
     <script src="./richText/tinymce.min.js"></script>
     <script src="./richText/langs/zh_CN.js"></script>
@@ -38,7 +40,8 @@
                 <textarea></textarea>
             </div>
             <div id="inforbtn">
-                <button id="releasebtn">发布新闻</button> <input type="text" name="" id="numberOfnews">
+                <button id="releasebtn">发布新闻</button> 
+                <!-- <input type="text" name="" id="numberOfnews"> -->
             </div>
         </div>
         <div id="show1" class="show">
@@ -55,7 +58,7 @@
         </div>
         <div id="show2" class="show">
             <p id="usertitle">用户详情</p>
-            <div id="userinformation"><span id="usernames">用户名</span><span id="userstatuss">用户状态</span><button id="useroperates">操作</button></div>
+            <div id="userinformation"><span id="usernames">用户名</span><span id="userstatuss">用户状态</span><span id="useroperates">操作</span></div>
             <div id="getuser">
                 
                 <div class="userinfor"><span class="username">张翰</span><span class="userstatus">正常</span><button class="useroperate">封禁</button></div>
@@ -74,12 +77,24 @@
             </div>
         </div>
         <div id="show3" class="show">
-            <input type="text" name="" id="relenewtitle" placeholder="请输入新闻标题">
-            <div id="newstext">
-                <textarea></textarea>
+            <div id="searchusername">
+                <input type="text" name="inputname" id="inputname" placeholder="请输入用户名关键词"><button id="searUserBtn">搜索</button>
             </div>
-            <div>
-                <button id="releasebtn">3</button>
+            <div id="userinformation"><span id="usernames">用户名</span><span id="userstatuss">用户状态</span><span id="useroperates">操作</span></div>
+            <div id="searchres">
+                <div class="userinfor"><span class="username">张翰</span><span class="userstatus">正常</span><button class="useroperate">封禁</button></div>
+                <div class="userinfor"><span class="username">张翰</span><span class="userstatus">正常</span><button class="useroperate">封禁</button></div>
+                <div class="userinfor"><span class="username">张翰</span><span class="userstatus">正常</span><button class="useroperate">封禁</button></div>
+                <div class="userinfor"><span class="username">张翰</span><span class="userstatus">正常</span><button class="useroperate">封禁</button></div>
+                <div class="userinfor"><span class="username">张翰</span><span class="userstatus">正常</span><button class="useroperate">封禁</button></div>
+                <div class="userinfor"><span class="username">张翰</span><span class="userstatus">正常</span><button class="useroperate">封禁</button></div>
+                <div class="userinfor"><span class="username">张翰</span><span class="userstatus">正常</span><button class="useroperate">封禁</button></div>
+                <div class="userinfor"><span class="username">张翰</span><span class="userstatus">正常</span><button class="useroperate">封禁</button></div>
+            </div>
+            <div id="searuserbtns">
+                <button id="searuserprevbtn">上一页</button>
+                <div id="searuserpages">1/1</div>
+                <button id="searusernextbtn">下一页</button>
             </div>
         </div>
         <div id="show4" class="show">
@@ -101,13 +116,16 @@
             </div>
         </div>
         <div id="show6" class="show">
-            <input type="text" name="" id="relenewtitle" placeholder="请输入新闻标题">
-            <div id="newstext">
-                <textarea></textarea>
-            </div>
-            <div>
-                <button id="releasebtn">6</button>
-            </div>
+            <form action="../php/root/rootpwd.php" method="post">
+                <div id="pwdinput">
+                    <span class="pwdtxt" id="newpwdtext">新密码</span><input type="password" name="newrootpwd" id="newrootpwd"><br>
+                    <span class="pwdtxt" id="newpwdtext1">确认密码</span><input type="password" name="newrootpwd1" id="newrootpwd1">
+                </div>
+                <div id="submitroot">
+                    <input type="submit" value="申请更换密码" id="subpwd">
+                </div>
+            </form>
+            
         </div>
         <div id="show7" class="show">
             <div id="box1">

@@ -7,7 +7,7 @@ if(empty($p)){
 }
 
 $conn=mysqli_connect("localhost","root","root","bbs");
-$sql="SELECT `id`,`title`,`time` FROM `news` LIMIT $p,3";
+$sql="SELECT `id`,`title`,`time` FROM `news` ORDER BY `time` DESC LIMIT $p,3";
 $res=mysqli_query($conn,$sql);
 $arr=[];
 while($retval=mysqli_fetch_assoc($res)){
