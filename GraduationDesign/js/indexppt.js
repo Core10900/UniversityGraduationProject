@@ -1,5 +1,5 @@
-window.onload = function() {
-    
+window.onload = function () {
+
     var login = document.getElementById("logins");
     // 获取 页面的哈希值；
     var hashStr = window.location.hash;
@@ -7,51 +7,57 @@ window.onload = function() {
     switch (hashStr) {
         case '#1':
             login.innerHTML = "欢迎登录中国教师学术论坛网!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id='regis'>[注销]</button>";
-            
+
 
             break;
-            // case '#page2':
-            //     pageEle.innerHTML = "<h1>我是b页面</h1>";
-            //     break;
+        // case '#page2':
+        //     pageEle.innerHTML = "<h1>我是b页面</h1>";
+        //     break;
         default:
             login.innerHTML = '<a href="../html/login.html">[登录]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="registered.html">[注册]</a>';
             break;
     }
-    if(hashStr=="#1"){
-        setTimeout(function(){
+    if (hashStr == "#1") {
+        setTimeout(function () {
             alert("欢迎登录中国教师学术论坛网！");
-        },500);
-        let search=decodeURI(window.location.search);
+        }, 500);
+        let search = decodeURI(window.location.search);
         // console.log(search);
-        let uid=search.substring(1);
-        let res=uid.replace('"',"");
-        res=res.replace('"',"");
-        res=res.replace('"',"");
-        res=res.replace('"',"");
+        let uid = search.substring(1);
+        let res = uid.replace('"', "");
+        res = res.replace('"', "");
+        res = res.replace('"', "");
+        res = res.replace('"', "");
         // console.log(res);
-        let userdata=res.split("&");
+        let userdata = res.split("&");
         // console.log(userdata);
-        uid=userdata[0].substring(3);
-        let ustatus=userdata[1].substring(8);
-        let id=Number(uid);
+        uid = userdata[0].substring(3);
+        let ustatus = userdata[1].substring(8);
+        let id = Number(uid);
         // console.log(id,ustatus);
         // console.log(id);
-        document.cookie=`id=${id};`;
-        document.cookie=`ustatus=${ustatus}`
-        sessionStorage.setItem("id",id);
-        sessionStorage.setItem("ustatus",ustatus);
+        document.cookie = `id=${id};`;
+        document.cookie = `ustatus=${ustatus}`
+        sessionStorage.setItem("id", id);
+        sessionStorage.setItem("ustatus", ustatus);
+        localStorage.setItem("id", id);
+        localStorage.setItem("key", "value");
+
+
+        var regbtn = document.getElementById("regis");
+        console.log(regbtn);
+        regbtn.onclick = function () {
+            var res = confirm("您确定退出登录吗？");
+            if (res) {
+                sessionStorage.clear();
+                document.cookie = `id=;Max-Age=-1`;
+                document.cookie = `ustatus=;Max-Age=-1`;
+                window.location.href = 'index.html';
+                alert("注销成功！");
+            }
+        }
 
     }
-    var regbtn = document.getElementById("regis");
-    regbtn.onclick = function() {
-        var res = confirm("您确定退出登录吗？");
-        if (res) {
-            sessionStorage.clear();
-            document.cookie=`id=;Max-Age=-1`;
-            document.cookie=`ustatus=;Max-Age=-1`;
-            window.location.href = 'index.html';
-            alert("注销成功！");
-        }
-    }
+
 
 };

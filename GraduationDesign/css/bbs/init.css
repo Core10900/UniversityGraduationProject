@@ -1,0 +1,112 @@
+#init{
+    width: 1500px;
+    height: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f6f6f6;
+}
+#init #top{
+    width: 1500px;
+    height: 60px;
+    position: relative;
+    background-color: #ffffff;
+}
+#init #top #top-txt{
+    font-size: 40px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    left: 50px;
+    cursor: default;
+}
+#init #top #top-search{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#init #top #top-search #top-search-show{
+    
+    width: 300px;
+    height: auto;
+    float: left;
+}
+#init #top #top-search #top-search-show #top-search-input{
+    width: 280px;
+    margin-left: 10px;
+    font-size: 28px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 8px;
+    outline:none;
+}
+#init #top #top-search #top-search-show ul{
+    list-style: none;
+    /* display: none; */
+    background-color: #fff;
+    box-shadow: 15px;
+    width: 280px;
+    height: auto;
+    display: none;
+}
+#init #top #top-search #top-search-show ul li{
+    font-size: 18px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    cursor: default;
+}
+#init #top #top-search #top-search-input-searchbtn{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 32px;
+    text-align: center;
+    box-shadow: 6px;
+    border: none;
+    background-color: #fff;
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+#init #top #top-search #top-search-input-searchbtn:hover{
+    background-color: #2890ff;
+    color: #fff;
+}
+#init #nav{
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 225px;
+    height: 820px;
+    background-color: #fff;
+}
+#init #nav .navbtn{
+    width: 210px;
+    height: 46px;
+    background-color: #fff;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    margin-left: 7px;
+    margin-top: 20px;
+}
+#init #nav hr{
+    margin-top: 20px;
+    color: #e8e8e8;
+}
+#init #nav .navbtn:hover{
+    color: #fff;
+    background-color: #2890ff;
+}

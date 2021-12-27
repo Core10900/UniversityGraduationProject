@@ -116,7 +116,7 @@
             </div>
         </div>
         <div id="show6" class="show">
-            <form action="../php/root/rootpwd.php" method="post">
+            <form action="../php/root/rootpwd.php" method="post" onsubmit="return CheckPostPwd();" name="myfromroot">
                 <div id="pwdinput">
                     <span class="pwdtxt" id="newpwdtext">新密码</span><input type="password" name="newrootpwd" id="newrootpwd"><br>
                     <span class="pwdtxt" id="newpwdtext1">确认密码</span><input type="password" name="newrootpwd1" id="newrootpwd1">

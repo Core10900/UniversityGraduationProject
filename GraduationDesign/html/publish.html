@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/publish/init.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="./richText/tinymce.min.js"></script>
+    <script src="./richText/langs/zh_CN.js"></script>
+    <script>tinymce.init({ selector: 'textarea', language: "zh_CN" });</script>
+    <title>文坛之家</title>
+</head>
+<body>
+    <div id="init">
+        <div id="top">
+            <div id="top-txt">作者专区</div>
+            <button id="returnbbs">返回论坛</button>
+        </div>
+        <div id="txttitle">
+            <input type="text" name="" placeholder="请输入文章标题" id="texttitle">
+        </div>
+        <div id="paperTypes">
+            <span>请选择论文类型：</span>
+            <span>专题型</span>
+            <input type="radio" name="papertype" id="" value="专题型" class="papertype">
+            <span>论辩型</span>
+            <input type="radio" name="papertype" id="" value="论辩型" class="papertype">
+            <span>综述型</span>
+            <input type="radio" name="papertype" id="" value="综述型" class="papertype">
+            <span>综合型</span>
+            <input type="radio" name="papertype" id="" value="综合型" class="papertype">
+        </div>
+        <div id="write">
+            <textarea></textarea>
+        </div>
+        <div id="bottom">
+            <button id="submitbtn">申请发表</button>
+        </div>
+    </div>
+    <div id="annotation">
+        <div class="text">Wuhan Huaxia Institute of Technology&nbsp;&copy;&nbsp;2021-12-27</div>
+        <div class="text">软件1181 林寒&nbsp;版权所有</div>
+    </div>
+    
+</body>
+<script src="../js/publish/returnbbs.js"></script>
+<script src="../js/publish/publish.js"></script>
+</html>

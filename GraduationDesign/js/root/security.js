@@ -10,3 +10,26 @@ securitybtn.onclick=function(){
         }
     })
 }
+function CheckPostPwd(){
+    let regpwd = /^[0-9a-zA-Z]{8,14}$/;
+    let pwd1=document.getElementById("newrootpwd").value;
+    let pwd2=document.getElementById("newrootpwd1").value;
+    if(pwd1==""||pwd2==""){
+        alert("密码不能为空");
+        myfromroot.newrootpwd.focus();
+        return false;
+    }else if(pwd1!=pwd2){
+        alert("两次密码不一致！");
+        myfromroot.newrootpwd.focus();
+        return false;
+    }else if(!regpwd.test(pwd1)){
+        alert("新密码不符合格式要求！（8-14位数字、字母或数字+字母的组合）");
+        myfromroot.newrootpwd.focus();
+        return false;
+    }else if(!regpwd.test(pwd2)){
+        alert("确认密码不符合格式要求！（8-14位数字、字母或数字+字母的组合）");
+        myfromroot.newrootpwd1.focus();
+        return false;
+    }
+
+}

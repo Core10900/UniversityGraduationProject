@@ -1,0 +1,114 @@
+#init{
+    width: 1200px;
+    height: 2180px;
+    position: relative;
+    margin: 0 auto;
+}
+body{
+    background-color: #f6f6f6;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#init #top{
+    width: 1200px;
+    height: 60px;
+    background-color: #fff;
+}
+#init #top #top-txt{
+    position: absolute;
+    font-size: 40px;
+    left: 50px;
+    top: 0px;
+    cursor: default;
+}
+#init #top #returnbbs{
+    position: absolute;
+    right: 50px;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    background-color: #fff;
+    top: 10px;
+}
+#init #top #returnbbs:hover{
+    color: #fff;
+    background-color: #2890ff;
+}
+#init #write{
+    width: 1200px;
+    height: 1930px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#init #write textarea{
+    width: 100%;
+    height: 100%;
+}
+#init #bottom{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+#init #bottom #submitbtn{
+    margin-top: 10px;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    background-color: #fff;
+}
+#init #bottom #submitbtn:hover{
+    color: #fff;
+    background-color: #2890ff;
+}
+#annotation{
+    width: 100%;
+    height: 40px;
+    background-color: #bababa;
+    text-align: center;
+    font-size: 14px;
+    cursor: default;
+}
+#init #txttitle{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+}
+#init #txttitle #texttitle{
+    width: 90%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 8px;
+    outline:none;
+    margin-left: 5%;
+    border: none;
+    font-size: 36px;
+    text-align: center;
+}
+#init #paperTypes{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+#init #paperTypes input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
