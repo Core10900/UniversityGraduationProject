@@ -1,0 +1,155 @@
+#show5 #auditpapershow{
+    width: 1235px;
+    line-height: 50px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: cornflowerblue;
+    cursor: default;
+}
+#show5 #auditpapershowtitle{
+    width: 1235px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 36px;
+    line-height: 50px;
+    position: relative;
+    cursor: default;
+}
+#show5 #auditpapershowtitle #auditpapername{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+    color: black;
+    left: 50px;
+    top:0;
+}
+#show5 #auditpapershowtitle #auditpapertitles{
+    position: absolute;
+    left: 300px;
+    top: 0;
+    width: 585px;
+    height: 100%;
+    line-height: 100%;
+    color: black;
+    text-align: center;
+}
+#show5 #auditpapershowtitle #auditpaperoperation{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+    color: black;
+}
+#show5 #auditpaperdata{
+    width: 1235px;
+    height:470px ;
+}
+#show5 #auditpaperdata .auditdata{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 1135px;
+    height: 50px;
+    position: relative;
+}
+#show5 #auditpaperdata .auditdata .auditpaperauthor{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    cursor: default;
+    font-size: 36px;
+    text-align: center;
+
+
+}
+#show5 #auditpaperdata .auditdata .auditpapertitle{
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+    height: 50px;
+    line-height: 50px;
+    width: 585px;
+    text-align: center;
+    margin-left: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    overflow: hidden;    
+    text-overflow:ellipsis;    
+    white-space: nowrap;
+}
+#show5 #auditpaperdata .auditdata .auditpapertitle:hover{
+    color: aqua;
+}
+#show5 #auditpaperdata .auditdata .auditpaperdel{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 36px;
+    background-color: #fff;
+    color: black;
+    border: 15px;
+    border-radius: 15px;
+
+}
+#show5 #auditpaperdata .auditdata .auditpaperdel:hover{
+    background-color: #2890ff;
+    color: #fff;
+}
+#show5 #auditpaperbtns{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+#show5 #auditpaperbtns #auditpaperprovbtn{
+    width: 200px;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    position: absolute;
+    top: 5px;
+    left: 50px;
+}
+#show5 #auditpaperbtns #auditpaperprovbtn:hover{
+    color: #fff;
+    background-color: #2890ff;
+}
+#show5 #auditpaperbtns #auditpapernextbtn{
+    width: 200px;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    line-height: 40px;
+    top: 5px;
+    right: 50px;
+}
+#show5 #auditpaperbtns #auditpapernextbtn:hover{
+    color: #fff;
+    background-color: #2890ff;
+}
+#show5 #auditpaperbtns #auditpaperpages{
+    font-size: 36px;
+    position: absolute;
+    top: 7px;
+    left: 579px;
+}
