@@ -1,0 +1,121 @@
+#init #show{
+    width: 1265px;
+    height: 630px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+#init #show #paperData{
+    width: 100%;
+    height: 550px;
+    /* border: 2px solid red; */
+    margin-top: 10px;
+}
+#init #show #paperbtns{
+    width: 100%;
+    height: 50px;
+    /* border: 2px solid aqua; */
+    margin-top: 10px;
+}
+#init #show #paperData .dataPlate{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+}
+#init #show #paperData .dataPlate .paperTitleType{
+    width: 100%;
+    height: 40px;
+}
+#init #show #paperData .dataPlate .paperTitleType a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 28px;
+    margin-left: 50px;
+    width: 800px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+#init #show #paperData .dataPlate .paperTitleType a:hover{
+    color: aqua;
+}
+#init #show #paperData .dataPlate .paperTitleType .paperTime{
+    float: right;
+    margin-right: 50px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    cursor: default;
+}
+#init #show #paperData .dataPlate .paperNameTime{
+    width: 100%;
+    height: 30px;
+}
+#init #show #paperData .dataPlate .paperNameTime .name{
+    float: left;
+    margin-left: 50px;
+    font-size: 24px;
+    line-height: 30px;
+    height: 30px;
+    width: 300px;
+    cursor: default;
+}
+#init #show #paperData .dataPlate .paperNameTime .time{
+    float: right;
+    margin-right: 50px;
+    font-size: 24px;
+    line-height: 30px;
+    height: 30px;
+    width: auto;
+    cursor: default;
+
+}
+#init #show #paperbtns #prov{
+    width: 150px;
+    height: 42px;
+    font-size: 32px;
+    text-align: center;
+    line-height:42px;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 4px;
+}
+#init #show #paperbtns #prov:hover{
+    background-color: #2890ff;
+    color: #fff;
+}
+#init #show #paperbtns #next{
+    width: 150px;
+    height: 42px;
+    font-size: 32px;
+    text-align: center;
+    line-height:42px;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 4px;
+}
+#init #show #paperbtns #next:hover{
+    background-color: #2890ff;
+    color: #fff;
+}
+#init #show #paperbtns #pages{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    margin-left: 330px;
+    cursor: default;
+}

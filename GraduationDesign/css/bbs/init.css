@@ -1,6 +1,6 @@
 #init{
     width: 1500px;
-    height: 1600px;
+    height: 700px;
     margin: 0 auto;
     position: relative;
 }
@@ -16,6 +16,7 @@ body{
     height: 60px;
     position: relative;
     background-color: #ffffff;
+    border-radius: 10px;
 }
 #init #top #top-txt{
     font-size: 40px;
@@ -88,8 +89,9 @@ body{
     left: 0;
     top: 70px;
     width: 225px;
-    height: 820px;
+    height: 630px;
     background-color: #fff;
+    border-radius: 15px;
 }
 #init #nav .navbtn{
     width: 210px;
