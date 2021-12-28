@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/user/init.css">
+    <link rel="stylesheet" href="../css/user/message.css">
+    <link rel="stylesheet" href="../css/user/amend.css">
+    <link rel="stylesheet" href="../css/user/pwd.css">
+    <link rel="stylesheet" href="../css/user/paper.css">
+    <title>个人空间</title>
+</head>
+
+<body>
+    <div id="init">
+        <div id="top">
+            <div id="top-txt">求实创新</div>
+            <button id="bbs">返回论坛</button>
+        </div>
+        <div id="nav">
+            <button class="navbtn" id="message">账号信息</button>
+            <button class="navbtn" id="amend">修改信息</button>
+            <button class="navbtn" id="pwd">密码安全</button>
+            <button class="navbtn" id="paper">我的论文</button>
+        </div>
+        <div class="show" id="show1">
+            <div class="usertitle" id="usertitle1">当前账号：</div>
+            <div class="usertitle">账号状态：</div>
+            <div class="usertitle">毕业学院：</div>
+            <div class="usertitle">网络用名：</div>
+            <div id="messbox">
+                <div class="mess" id="account">17756883591</div>
+                <div class="mess" id="astatus">正常</div>
+                <div class="mess" id="school">未设置</div>
+                <div class="mess" id="aname">小清新</div>
+            </div>
+
+        </div>
+        <div class="show" id="show2">
+            <div class="ame" id="scho">毕业学院：</div>
+            <div class="ame">新网名：</div>
+            <div id="inputamend">
+                <input type="text" name="ameschool" id="ameschool" class="amen"><br>
+                <input type="text" name="amescreen" id="amescreen" class="amen">
+            </div>
+            <input type="submit" value="提交" id="sub">
+
+
+        </div>
+        <div class="show" id="show3">
+                <div id="pwdinput">
+                    <span class="pwdtxt" id="newpwdtext">新密码</span><input type="password" name="newrootpwd" id="newrootpwd"><br>
+                    <span class="pwdtxt" id="newpwdtext1">确认密码</span><input type="password" name="newrootpwd1" id="newrootpwd1">
+                </div>
+                <div id="submitroot">
+                    <input type="submit" value="申请更换密码" id="subpwd">
+                </div>
+        </div>
+        <div class="show" id="show4">
+            <div id="topt">论文列表</div>
+            <div id="zs">
+                <div id="zs-title">论文标题</div>
+                <div id="zs-time">发表时间</div>
+            </div>
+            <div id="paperplate">
+                <div class="plate">
+                    <a href="./paper.html" target="_blank">论水利工程课程优化</a>
+                    <div class="paper-tim">2021-12-27</div>
+                </div>
+                <div class="plate">
+                    <a href="./paper.html" target="_blank">论水利工程课程优化</a>
+                    <div class="paper-tim">2021-12-27</div>
+                </div>
+                <div class="plate">
+                    <a href="./paper.html" target="_blank">论水利工程课程优化</a>
+                    <div class="paper-tim">2021-12-27</div>
+                </div>
+                <div class="plate">
+                    <a href="./paper.html" target="_blank">论水利工程课程优化</a>
+                    <div class="paper-tim">2021-12-27</div>
+                </div>
+                <div class="plate">
+                    <a href="./paper.html" target="_blank">论水利工程课程优化</a>
+                    <div class="paper-tim">2021-12-27</div>
+                </div>
+                <div class="plate">
+                    <a href="./paper.html" target="_blank">论水利工程课程优化</a>
+                    <div class="paper-tim">2021-12-27</div>
+                </div>
+            </div>
+            <div id="paperbtns">
+                <button id="provbtn">上一页</button>
+                <div id="pages">1/1</div>
+                <button id="nextbtn">下一页</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../js/user/returnbbs.js"></script>
+<script src="../js/user/amend.js"></script>
+<script src="../js/user/message.js"></script>
+<script src="../js/user/paper.js"></script>
+<script src="../js/user/pwd.js"></script>
+
+</html>

@@ -1,0 +1,59 @@
+#init{
+    width: 1200px;
+    height: auto;
+    min-height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#init #title{
+    width: 1100px;
+    padding: 20px 50px;
+    height: auto;
+    min-height: 100px;
+    position: relative;
+    min-height: 128px;
+}
+#init #title #text-title{
+    position: absolute;
+    width: 100%;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    /* min-height: 6; */
+}
+#init #title #text-time{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 28px;
+    text-align: center;
+    left: 550px;
+}
+#init #new{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+#init #bottom{
+    
+    width: 1200px;
+    height: 36px;
+    position: absolute;
+    background-color: #bababa;
+    bottom: 0;
+}
+#init #bottom p{
+    width: 100%;
+    font-size: 28px;
+    line-height: 36px;
+    height: 36px;
+    text-align: center;
+    color: blackl;
+}
+

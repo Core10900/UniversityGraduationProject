@@ -1,0 +1,45 @@
+#init #show2 .ame{
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    font-size: 36px;
+    margin-left: 350px;
+}
+#init #show2 #scho{
+    margin-top: 120px;
+}
+#init #show2 #inputamend{
+    float: right;
+    margin-right: 300px;
+    margin-top: -170px;
+    
+}
+#init #show2 #inputamend .amen{
+    width: 400px;
+    font-size: 36px;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 45px;
+    outline:none;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid aqua;
+}
+#init #show2 #sub{
+    height: 44px;
+    width: 210px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-size: 22px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 490px;
+    /* margin-top: 33px; */
+    margin-top: 50px;
+}
+#init #show2 #sub:hover{
+    background-color: #2890ff;
+    color: #fff;
+}

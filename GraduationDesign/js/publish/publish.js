@@ -1,4 +1,5 @@
 let submitbtnEle=document.getElementById("submitbtn");
+// console.log(submitbtnEle);
 submitbtnEle.onclick=function(){
     let relenewtitle=document.getElementById("texttitle").value;
     let text=tinyMCE.activeEditor.getContent();
@@ -9,8 +10,11 @@ submitbtnEle.onclick=function(){
     let num=retext.length;
     let radioval=$('input:radio:checked').val()
     let cookieres=document.cookie;
+    // console.log(cookieres);
     let cookiearr=cookieres.split(";");
     let uid=cookiearr[0].split("=");
+    // let ustatus=cookiearr[1].split("=");
+    // ustatus=ustatus[1];
     uid=Number(uid[1]);
     let titlereg = /^[\u4e00-\u9fa5]{1,}$/;
 
@@ -20,9 +24,12 @@ submitbtnEle.onclick=function(){
     // console.log(num);
     // console.log(text);
     // console.log(retext);
+    // console.log(ustatus);
 
     
-    
+    // if(ustatus!='正常'){
+    //     alert("您的账号已经被封禁，暂时没有权限申请发布论文，如果有疑问请给官方发送邮件申请解封（官方邮箱：1600661295@qq.com）");
+    // }
     if(num<1000){
         alert("正文内容少于1000字，请检查内容是否缺失");
     }else if(radioval==undefined){
@@ -32,7 +39,7 @@ submitbtnEle.onclick=function(){
     }else if(!titlereg.test(relenewtitle)){
         alert("论文标题必须是中文显示");
     }else if(!uid){
-        alert("无法获取账号信息，请检查浏览器是否支持cookie,重新登录");
+        alert("无法获取账号信息，请检查是否已登录账号且浏览器是否支持cookie,重新登录");
     }
     else{
        
@@ -52,10 +59,10 @@ submitbtnEle.onclick=function(){
             success: function (data) {
                 let arr=JSON.parse(data);
                 if(arr[0]==2){
-                    alert("发布成功！");
+                    alert("申请成功！请耐心等待审核");
                     window.location.href="./bbs.html";
                 }else{
-                    alert("发布失败！");
+                    alert("发布失败！请注意正文中是否有非法格式或非法字符！");
                 }
             }
         })

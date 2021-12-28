@@ -1,0 +1,95 @@
+#init{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: #fff; */
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+#init #top{
+    width: 1200px;
+    height: 60px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+}
+#init #top #txt{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    font-size: 36px;
+    height: 60px;
+    line-height: 60px;
+    cursor: default;
+    background-color: #fff;
+    color: cornflowerblue;
+    text-align: center;
+    text-decoration: none;
+}
+
+#init #title{
+    width: 1200px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: default;
+    position: relative;
+    background-color: #ffffff;
+    /* border: 1px solid aqua; */
+}
+#init #title #text-title{
+    padding: 20px;
+    width: 1160px;
+    height: auto;
+    text-align: center;
+    font-size: 34px;
+    min-height: 100px;
+}
+#init #title #text-type{
+    font-size: 24px;
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+}
+#init #title #text-author{
+    width: 100px;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    left: 550px;
+    bottom: 0px;
+}
+
+#init #title #text-time{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    font-size: 24px;
+}
+#init #paper{
+    margin-top: 40px;
+    width: 1200px;
+    min-height: 800px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+#init #bottom{
+    position: relative;
+    margin-top: 10px;
+    width: 1200px;
+    height: 40px;
+    background-color: #bababa;
+}
+#init #bottom p{
+    position:absolute;
+    width: 1200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+}
