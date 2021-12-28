@@ -1,6 +1,18 @@
 var paperP=1;
 var paperPage;
 
+function PaperDelFn(){
+    let paperDeleteBtnEle=document.querySelectorAll(".paperdel");
+    // console.log(paperDeleteBtnEle);
+    paperDeleteBtnEle.forEach((item)=>{
+        item.onclick=function(){
+            let pid=Number(item.getAttribute("id"));
+            // console.log(pid);
+            ajaxPaperDataDel(pid)
+        }
+    })
+}
+
 function randerPaper(data){
     let paperdataEle=document.getElementById("paperdata");
     paperdataEle.innerHTML="";
@@ -12,7 +24,7 @@ function randerPaper(data){
         <button class="paperdel" id="${Number(item.pid)}">删除</button>`;
         paperdataEle.appendChild(divElepa);
     })
-    
+    PaperDelFn();
    
 }
 function randerPaperPage(p,page){
@@ -32,6 +44,24 @@ function ajaxPaperData(){
                 // resove("");
                 // randerNewlist(JSON.parse(data));
                 // console.log(p);
+                resove("");
+                
+            }
+        })
+    })
+}
+
+function ajaxPaperDataDel(pid){
+    return new Promise((resove)=>{
+        $.ajax({
+            type: "get",
+            url: `../php/root/paperdatadel.php?pid=${pid}`,
+            success: function (data) {
+                let arr=JSON.parse(data);
+                if(arr[0]==2){
+                    alert("删除成功！");
+                    ajaxInitPaperData();
+                }
                 resove("");
                 
             }
@@ -80,6 +110,7 @@ function ajaxPaperDataBtn(p){
     })
 }
 async function ajaxInitPaperData(){
+    paperP=1;
     try{
         let res1=await ajaxPaperData();
         console.log(res1);
@@ -112,6 +143,8 @@ papernextbtnEle.onclick=function(){
     
 
 }
+
+
 
 var paperbtn=document.getElementById("paper");
 paperbtn.onclick=function(){
