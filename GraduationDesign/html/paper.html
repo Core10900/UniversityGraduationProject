@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/paper.css">
     <title>论文天地</title>
 </head>
 <body>
     <div id="init">
         <div id="top">
-            <div dir="title">
+            <div id="title">
                 论文标题
+            </div>
+            <div id="author">作者：<span>英格兰</span></div>
+            <div id="typeTime">
+                <div id="type">论文类型：<span>综合型</span></div>
+                <div id="time">发表时间：<span>2021-12-27</span></div>
             </div>
         </div>
         <div id="text">
             正文
         </div>
+        <div id="publish">
+            <div id="box">
+                <button id="pub-com">发表评论</button>
+            </div>
+            
+            <div id="input">
+                <textarea></textarea>
+                <button id="sub">提交</button>
+                <button id="cancel">取消</button>
+            </div>
+        </div>
         <div id="comment">
-            <ul>
+            <div id="com-txt">网友评论</div>
+            <ul id="commentList">
                 <li>小清新：太赞了！</li>
                 <li>小清新：太赞了！</li>
                 <li>小清新：太赞了！</li>
@@ -27,12 +45,15 @@
                 <li>小清新：太赞了！</li>
                 <li>小清新：太赞了！</li>
             </ul>
+            
         </div>
-        <div id="input">
-            <textarea></textarea>
-            <button id="提交">提交</button>
-        </div>
+        
+    </div>
+    <div id="bottom">
+        <p class="text">Wuhan Huaxia Institute of Technology&nbsp;&copy;&nbsp;2021-12-29</p>
+        <p class="text">软件1181 林寒&nbsp;版权所有</p>
     </div>
     
 </body>
+<script src="../js/paper.js"></script>
 </html>
