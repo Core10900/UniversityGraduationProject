@@ -10,12 +10,20 @@ submitbtnEle.onclick=function(){
     let num=retext.length;
     let radioval=$('input:radio:checked').val()
     let cookieres=document.cookie;
+    let uid;
+    let ustatus;
+    if(cookieres.length<4){
+        uid=undefined;
+        ustatus=undefined;
+    }else{
+        let cookiearr=cookieres.split(";");
+        uid=cookiearr[0].split("=");
+        ustatus=cookiearr[1].split("=");
+        ustatus=ustatus[1];
+        uid=Number(uid[1]);
+    }
     // console.log(cookieres);
-    let cookiearr=cookieres.split(";");
-    let uid=cookiearr[0].split("=");
-    // let ustatus=cookiearr[1].split("=");
-    // ustatus=ustatus[1];
-    uid=Number(uid[1]);
+    
     let titlereg = /^[\u4e00-\u9fa5]{1,}$/;
 
     // console.log(uid);
@@ -27,9 +35,6 @@ submitbtnEle.onclick=function(){
     // console.log(ustatus);
 
     
-    // if(ustatus!='正常'){
-    //     alert("您的账号已经被封禁，暂时没有权限申请发布论文，如果有疑问请给官方发送邮件申请解封（官方邮箱：1600661295@qq.com）");
-    // }
     if(num<1000){
         alert("正文内容少于1000字，请检查内容是否缺失");
     }else if(radioval==undefined){
@@ -37,9 +42,11 @@ submitbtnEle.onclick=function(){
     }else if(relenewtitle.length<1){
         alert("请完善论文标题")
     }else if(!titlereg.test(relenewtitle)){
-        alert("论文标题必须是中文显示");
-    }else if(!uid){
+        alert("论文标题必须是中文显示，且无任何符号");
+    }else if(uid<1){
         alert("无法获取账号信息，请检查是否已登录账号且浏览器是否支持cookie,重新登录");
+    }else if(ustatus!='正常'){
+        alert("您的账号已经被封禁，暂时没有权限申请发布论文，如果有疑问请给官方发送邮件申请解封（官方邮箱：1600661295@qq.com）");
     }
     else{
        

@@ -1,5 +1,8 @@
 let p = 1;
 let page;
+let ajaxnum = 1;
+//请求ajax数据类型 0搜索论文 1全部论文 2专题论文 3论辩论文 4综述论文 5综合论文
+let searchValue;
 function randerPaper(data) {
     let paperDataEle = document.getElementById("paperData");
     paperDataEle.innerHTML = "";
@@ -18,11 +21,34 @@ function randerPaper(data) {
         paperDataEle.appendChild(divEle);
     });
 }
-function randerPaperPages(p,page){
-    if(page==0){
-        page=1;
+function randerPaperPages(p, page) {
+    if (page == 0) {
+        page = 1;
     }
-    let pagesEle=document.getElementById("pages");
-    pagesEle.innerHTML="";
-    pagesEle.innerHTML=`${p}/${page}`;
+    let pagesEle = document.getElementById("pages");
+    pagesEle.innerHTML = "";
+    pagesEle.innerHTML = `${p}/${page}`;
+}
+// async function initPaperList(){
+//     try{
+//         let res1=await 
+//     }
+// }
+function randerPaperBtn(ajaxnum, p) {
+    return new Promise((resove) => {
+        if (ajaxnum = 0) {
+            let xhr;
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            } else {
+                xhr = new ActiveXObject();
+            }
+            xhr.open("get", `../php/bbs/search.php?val=${searchValue}&p=${p}`);
+            xhr.send();
+            xhr.onload = function () {
+                let data = JSON.parse(xhr.responseText);
+                console.log(data);
+            }
+        }
+    })
 }
