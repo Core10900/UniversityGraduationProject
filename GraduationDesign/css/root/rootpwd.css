@@ -23,6 +23,15 @@
     bottom: 120px;
     cursor: default;
 }
+#show6 #pwdinput #rootcookieid{
+    border-color: #fff;
+    display: none;
+}
+#show6 #pwdinput #rootcookieids{
+    border-color: #fff;
+    display: none;
+    cursor: default;
+}
 #show6 #pwdinput #newrootpwd{
     /* margin-right: 300px; */
     outline:none;
