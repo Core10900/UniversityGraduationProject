@@ -63,6 +63,8 @@ subbtnEle.onclick=function(){
                 alert("成功发表评论");
                 let inputEle=document.getElementById("input");
                 inputEle.style.display="none";
+                ajaxComment();
+
             }else{
                 alert("评论失败");
             }
