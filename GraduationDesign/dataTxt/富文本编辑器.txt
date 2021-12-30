@@ -1,0 +1,3 @@
+let content=tinyMCE.activeEditor.getContent() ;
+console.log(content)
+提取文本内容以及格式
